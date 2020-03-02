@@ -10,7 +10,7 @@ node {
 	stage('Build') {
 		def mvn_version = 'Maven_Home'
 		withEnv( ["PATH+MAVEN=${tool mvn_version}/bin"]) {
-			bat 'mvn clean compile test'
+			bat 'mvn site'
 			}
 		}
 }
