@@ -11,10 +11,7 @@ node {
 		def mvn_version = 'Maven_Home'
 		withEnv( ["PATH+MAVEN=${tool mvn_version}/bin"]) {
 			sh 'mvn site'
-			def pom = readMavenPom file:'pom.xml'
 
-                	print pom.version
-                	env.version = pom.version
 			}
 		}
 }
