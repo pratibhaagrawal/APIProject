@@ -1,6 +1,6 @@
 node {
         stage('Checkout') {
-            git url: 'https://github.com/pratibhaagrawal/APIProject.git',  branch: 'master'
+            git url: 'https://github.com/pratibhaagrawal/APIProject.git/my-app1',  branch: 'master'
             echo '****************CHECKOUT SUCCESSFUL****************'
         }
        
