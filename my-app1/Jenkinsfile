@@ -11,7 +11,6 @@ node {
 		def mvn_version = 'Maven_Home'
 		withEnv( ["PATH+MAVEN=${tool mvn_version}/bin"]) {
 			bat 'mvn site'
-
 			}
 		}
 }
